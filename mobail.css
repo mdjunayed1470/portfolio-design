@@ -1,0 +1,287 @@
+
+
+.italic {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-responsive{
+  display: none;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+img{
+    max-width: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+  /* reset code end */
+
+
+
+
+
+
+  .nav{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .fa{
+    color: #fff;
+    font-size: 3rem;
+    margin-right: 30px;
+    margin-top: 25px;
+  }
+  
+  .nav ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 100%;
+    top: 120px;
+    background-color: #292929;
+    text-align: center;
+    transition: 0.8s;
+  }
+  .nav ul a{
+    padding: 30px;
+    color: #fff;
+  }
+  .nav #demo:checked ~ ul{
+    left: 0;
+  }
+.nav-logo{
+    width: 100px;
+}
+
+/* banner start */
+
+#banner{
+    background-image: url(./ing/website-development-links-seo-webinar-cyberspace-concept_53876-120953.avif);
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner-txt{
+    margin-top: 50px;
+    padding: 100px 0;
+}
+.banner-txt h1{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.banner-btn{
+  text-align: center;
+  font-size: 2rem;
+}
+.banner-a{
+  color: white;
+  background: blueviolet;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.banner-a::before{
+  content: " ";
+  left: 0;
+  top: 0;
+  background: greenyellow;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transition: all linear .4s;
+  z-index: -1;
+}
+.banner-a:hover::before{
+  width: 100%;
+}
+
+/* about section start */
+
+#about-section{
+  text-align: center;
+  padding: 50px;
+}
+#about-section p{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#about-section h1{
+  font-size: 4rem;
+}
+
+/* service */
+#service{
+  background-color: rgba(229, 222, 222,.3);
+  padding: 100px 20px;
+}
+.card{
+  margin-bottom: 20px;
+  border: 1px solid pink;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all linear .3s;
+  border-radius: 15px;
+}
+
+.card-body i{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card:hover{
+  background: blue;
+  color: white;
+  border-radius: 15px;
+}
+.service-head{
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/* contact start */
+#contact {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-head {
+  font-size: 4.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#contact p{
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-title{
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* footer start */
+
+#footer{
+  color: white;
+  background: #030F15;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 60px;
+  text-align: center;
+}
+
+.footer-content{
+  margin: 30px 0;
+}
+.footer-content h1,p{
+  margin-bottom: 30px;
+}
+.footer-icon{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 5.5px;
+}
+
+.footer-icon i{
+  border: 1px solid blueviolet;
+  transition: all linear .4s;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: blue;
+  border-radius: 50%;
+}
+
+.footer-icon i:hover{
+  background: blue;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px white;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 15px white;
+}
